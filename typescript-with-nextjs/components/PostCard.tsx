@@ -1,13 +1,13 @@
-import { PostProps } from "@/types/types";
-
-function PostCard(props:PostProps) {
-  return (
-    <>
-      <div>PostCard</div>
-      <p>{props.title}</p>
-      <p>{props.body}</p>
-    </>
-  );
+type ButtonProps = {
+  bac: string;
+  size: number;
+  isDisable: false;
 }
 
-export default PostCard;
+function PostCard({bac, size, isDisable}: ButtonProps) {
+  return (
+    <div>{bac}, {size}, {isDisable}</div>
+  )
+}
+
+export default PostCard
