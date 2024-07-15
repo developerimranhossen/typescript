@@ -43,4 +43,13 @@ let mySt: any = '12';
 
     type startWithImran = `Imran${string}`;
 
-    const myName: startWithImran = "Imran-hossen" 
+    const myName: startWithImran = "Imran-hossen"
+
+    type User = {
+        sessionId: string;
+        name: string;
+    }
+
+
+    // to omiting type property
+    type Guest = Omit<User, "name">

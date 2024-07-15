@@ -1,1 +1,1 @@
-export type PostProps  = {title: string, body: string}
+// export type PostCardProps  = {bac: string, size: number, isDisable: boolean}

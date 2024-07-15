@@ -1,8 +1,12 @@
 import PostCard from "./PostCard";
 
-let myVar = "imran";
 function PostList() {
-  return <PostCard bac={"red"} size={23} isDisable={false} />;
+  return (
+    <PostCard
+      style={{ backgroundColor: "red", fontSize: "30px" }}
+      isBig={false}
+    />
+  );
 }
 
 export default PostList;
